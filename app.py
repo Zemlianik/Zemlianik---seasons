@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    return 1x4
+    return '1x4'
 
-if __name__='__main__':
+if __name__=='__main__':
     app.run(debug=True)

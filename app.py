@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    return '1x4'
+    return render_template('index.html')
 
 @app.route('/let')
 def leto():

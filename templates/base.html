@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    {% block title %}{% endblock %}
 </head>
 <body>
+    <div class="container d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-center">
+        <span class="fs-2">SEASONS</span>
+      </a>
 
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="btn btn-outline-primary" href="/">Магазин</a>
+        <img src="/static/css/d1.png" width="40" height="32" class="me-2">
+        <a class="btn btn-outline-primary" href="/about">Информация</a>
+        <img src="/static/css/d2.png" width="40" height="32" class="me-2">
+        <a class="btn btn-outline-primary" href="/gold">Финансовые вопросы</a>
+        <img src="/static/css/d3.png" width="40" height="32" class="me-2">
+        <a class="btn btn-primary" href="/create">Добавить товар</a>
+
+      </nav>
+    </div>
+{% block body %}{% endblock %}
 </body>
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-muted">Aleksandr 2022</small>
+      </div>
+  </footer>
 </html>
